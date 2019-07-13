@@ -3,15 +3,15 @@ var fs = require('fs');
 var url = require('url');
 var qs = require('querystring');
 var template = require('./lib/template.js');
+var port = process.env.PORT || 3000;
 var path = require('path');
 var sanitizeHtml = require('sanitize-html');
 var mysql = require('mysql');
 var db = mysql.createConnection({
-  host      : 'localhost',
-  user      : 'root',
-  password  : 'kimj0327',
-  database  : 'rlawns',
-  port      : '3307'
+  host      : 'rlawnsdb.mysql.database.azure.com',
+  user      : 'rlawns@rlawnsdb',
+  password  : '@kimj0327',
+  database  : 'rlawns'
 });
 db.connect();
  
@@ -161,4 +161,4 @@ var app = http.createServer(function(request,response){
     response.end('Not found');
   }
 });
-app.listen(3000);
+app.listen(port);
