@@ -11,8 +11,7 @@ var db = mysql.createConnection({
  host: "rlawnsdb.mysql.database.azure.com",
  user: "rlawns@rlawnsdb",
  password: "@kimj0327",
- database: "rlawns",
- port: 3307
+ database: "rlawns"
 });
 
 var app = http.createServer(function(request,response){
