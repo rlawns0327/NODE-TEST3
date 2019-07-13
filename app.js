@@ -10,8 +10,8 @@ var mysql = require('mysql');
 var db = mysql.createConnection({
 host: "rlawnsdb.mysql.database.azure.com",
  user: "rlawns@rlawnsdb",
- password: {@kimj0327},
- database: {rlawns},
+ password: "@kimj0327",
+ database: "rlawns",
  port: 3306
 });
 db.connect();
