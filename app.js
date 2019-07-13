@@ -8,11 +8,11 @@ var path = require('path');
 var sanitizeHtml = require('sanitize-html');
 var mysql = require('mysql');
 var db = mysql.createConnection({
-host: "rlawnsdb.mysql.database.azure.com",
- user: "rlawns@rlawnsdb",
- password: "@kimj0327",
- database: "rlawns",
- port: 3306
+ host: 'rlawnsdb.mysql.database.azure.com',
+ user: 'rlawns@rlawnsdb',
+ password: '@kimj0327',
+ database: 'rlawns',
+ port: '3306'
 });
 db.connect();
  
