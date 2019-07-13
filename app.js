@@ -12,7 +12,7 @@ var db = mysql.createConnection({
  user: "rlawns@rlawnsdb",
  password: "@kimj0327",
  database: "rlawns",
- port: 3306
+ port: 3307
 });
 
 var app = http.createServer(function(request,response){
