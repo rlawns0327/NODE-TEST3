@@ -1,0 +1,15 @@
+C:\Windows\System32\cmd.exe /k "C:\Program Files\nodejs\nodevars.bat"
+
+NPM - nodejs에서 광범위하게 사용되는 패캐지 매니저
+
+    PM2 : 실행중인 Node.js 애플리케이션을 관리하는 프로세스 매니저
+          애플리케이션이 꺼지면 다시 켜준다. 
+        - 다운 : npm install pm2 -g
+        - 실행 : pm2 start 파일이름.js
+        - 모니터링 : pm2 monit
+        - 실행중인 리스트 : pm2 list
+        - 종료 : pm2 stop 파일이름
+        - 파일의 내용을 바꿨을 때 재시작이 필요없이 새로고침하면 끝 : pm2 start 파일이름.js --watch
+        - 오류 확인 : pm2 log
+
+        
