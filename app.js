@@ -11,7 +11,8 @@ var db = mysql.createConnection({
  host: "rlawns-db.mysql.database.azure.com",
  user: "rlawns@rlawns-db",
  password: "@kimj0327",
- database: "rlawns"
+ database: "rlawns",
+ ssl: true;
 });
 
 var app = http.createServer(function(request,response){
