@@ -12,7 +12,7 @@ var db = mysql.createConnection({
  user: "rlawns@rlawns-db",
  password: "@kimj0327",
  database: "rlawns",
- ssl: true;
+ ssl: true
 });
 
 var app = http.createServer(function(request,response){
