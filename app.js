@@ -12,6 +12,7 @@ var db = mysql.createConnection({
  user: "rlawns@rlawns-db",
  password: "@kimj0327",
  database: "rlawns",
+ port: 3306,
  ssl: true
 });
 
