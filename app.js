@@ -27,7 +27,7 @@ var app = http.createServer(function(request,response){
         var list = template.list(topics);
         var html = template.HTML(title, list,
           
-          `<h2>${title}</h2>${description}<iframe src="http://113.198.235.227:8081" width="500" height = "500"> </iframe>`,
+          `<h2>${title}</h2>${description}<iframe src="http://113.198.235.227:8081" width="800" height = "510"> </iframe>`,
           `<a href="/create">create</a>`
         );
         response.writeHead(200);
