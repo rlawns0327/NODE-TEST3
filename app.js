@@ -23,7 +23,7 @@ var app = http.createServer(function(request,response){
     if(queryData.id === undefined){
       db.query(`SELECT * FROM topic`, function(error,topics){
         var title = 'Welcome';
-        var description = 'Hello, Node.js';
+        var description = '';
         var list = template.list(topics);
         var html = template.HTML(title, list,
           
